@@ -1,0 +1,14 @@
+ .hov::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #18534b;
+    bottom: 0;
+}
+
+.hov:hover::after {
+    width: 100%;
+    transition: width .3s;
+} 
+

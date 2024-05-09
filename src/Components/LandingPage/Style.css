@@ -1,0 +1,40 @@
+.mySlides {
+  display: none;
+}
+
+/* Show first slide by default */
+.mySlides:first-child {
+  display: block;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  z-index: -1;
+}
+
+/* Fade animation */
+@keyframes fade {
+  0%, 20% {
+    opacity: 0;
+  }
+  33%, 53% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apply fade animation to all slides */
+.mySlides {
+  animation: fade 9s infinite; /* Change image every 9 seconds */
+}
+
+/* Center images */
+.mySlides img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
